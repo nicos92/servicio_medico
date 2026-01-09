@@ -21,7 +21,7 @@ class DatabaseService {
   }
 
   Future<void> _initDatabase() async {
-    final dir = await getApplicationDocumentsDirectory();
+    final dir = await getApplicationSupportDirectory();
     final dbPath = join(dir.path, 'consultas.db');
     _database = await databaseFactoryIo.openDatabase(dbPath);
   }
