@@ -1,0 +1,13 @@
+{
+  "_id": "uuid()",
+  "fecha": "2025-12-31",
+  "consultas": [
+    {
+      "manos_dedos": 0,
+      "munecas": 0,
+      "antebrazo_codos": 0,
+      "hombros": 0,
+      "cuello": 0
+    }
+  ]
+}
