@@ -1,4 +1,4 @@
-// screens/home_screen.dart
+// screens/home_screen.dart 366x788
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../widgets/counter_widget.dart';
@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
           break;
       }
     });
-    
+
     // Guardar automáticamente en la base de datos
     _dbService.saveConsulta(_currentConsulta);
   }
@@ -156,26 +156,31 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: ListView(
                       children: [
                         CounterWidget(
+                          key: ValueKey('${_selectedDate}_manos_dedos'),
                           label: 'Manos y/o Dedos',
                           initialValue: _currentConsulta.manosDedos,
                           onChanged: (value) => _updateCounter('manos_dedos', value),
                         ),
                         CounterWidget(
+                          key: ValueKey('${_selectedDate}_munecas'),
                           label: 'Munecas',
                           initialValue: _currentConsulta.munecas,
                           onChanged: (value) => _updateCounter('munecas', value),
                         ),
                         CounterWidget(
+                          key: ValueKey('${_selectedDate}_antebrazo_codos'),
                           label: 'Antebrazo y/o Codo',
                           initialValue: _currentConsulta.antebrazoCodos,
                           onChanged: (value) => _updateCounter('antebrazo_codos', value),
                         ),
                         CounterWidget(
+                          key: ValueKey('${_selectedDate}_hombros'),
                           label: 'Hombros',
                           initialValue: _currentConsulta.hombros,
                           onChanged: (value) => _updateCounter('hombros', value),
                         ),
                         CounterWidget(
+                          key: ValueKey('${_selectedDate}_cuello'),
                           label: 'Cuello',
                           initialValue: _currentConsulta.cuello,
                           onChanged: (value) => _updateCounter('cuello', value),
