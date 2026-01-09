@@ -48,6 +48,9 @@ dependencies:
   # Para generar IDs únicos
   uuid: ^4.0.0
 
+  # Para detectar la plataforma
+  device_info_plus: ^9.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
